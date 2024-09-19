@@ -1,0 +1,133 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Style with Gradient Background */
+body {
+   background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Task Input */
+#task-input, #task-date {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+#task-input:focus, #task-date:focus {
+    outline: none;
+    border-color: #6200ea;
+    box-shadow: 0px 4px 10px rgba(98, 0, 234, 0.3);
+}
+
+/* Add Task Button */
+#add-task-btn {
+    padding: 15px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-task-btn:hover {
+    background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+}
+
+/* Task List */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Task Item */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Complete and Delete Buttons */
+.complete-btn, .delete-btn {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.complete-btn {
+    background-color: #03dac6;
+}
+
+.complete-btn:hover {
+    background-color: #018786;
+}
+
+.delete-btn {
+    background-color: #ff5252;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}
